@@ -1,0 +1,36 @@
+.four {
+    padding: 50px 20px;
+    text-align: center;
+}
+.four h5 {
+    font-family: 'Merriweather', serif;
+    position: relative;
+    color: rgba(0, 0, 0, 0.89);
+    font-size: 50px;
+    font-weight: normal;
+    padding: 8px 20px 7px 20px;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+}
+.four h5:before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -28px;
+    left: -28px;
+    border: 4px solid rgba(0, 0, 0, 0.89);
+    box-sizing: border-box;
+}
+@media (max-width: 450px) {
+    .four h5 {font-size: 36px;}
+    .four h5:before {
+        width: 20px;
+        height: 20px;
+        top: -20px;
+        left: -20px;
+    }
+}
